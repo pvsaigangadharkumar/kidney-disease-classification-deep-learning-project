@@ -95,3 +95,72 @@ x==========x]
 [2023-12-13 19:52:42,610: INFO: main: >>>>>> stage Training completed <<<<<<
 
 x==========x]
+[2023-12-13 20:20:15,780: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-13 20:20:15,784: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-13 20:20:15,785: INFO: common: created directory at: artifacts]
+[2023-12-13 20:24:56,452: INFO: common: json file saved at: scores.json]
+[2023-12-13 20:24:59,138: INFO: builder_impl: Assets written to: /var/folders/8j/v8hmyhwj0mnf687qbbc3hy_w0000gn/T/tmpe7g527nb/model/data/model/assets]
+[2023-12-13 20:29:56,463: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-13 20:29:56,467: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-13 20:29:56,468: INFO: common: created directory at: artifacts]
+[2023-12-13 20:34:35,709: INFO: common: json file saved at: scores.json]
+[2023-12-13 20:34:38,271: INFO: builder_impl: Assets written to: /var/folders/8j/v8hmyhwj0mnf687qbbc3hy_w0000gn/T/tmp479eh2_e/model/data/model/assets]
+[2023-12-13 20:35:53,217: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-13 20:35:53,221: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-13 20:35:53,222: INFO: common: created directory at: artifacts]
+[2023-12-13 20:40:51,161: INFO: common: json file saved at: scores.json]
+[2023-12-13 20:40:53,709: INFO: builder_impl: Assets written to: /var/folders/8j/v8hmyhwj0mnf687qbbc3hy_w0000gn/T/tmpac7b5u2s/model/data/model/assets]
+[2023-12-13 21:07:43,194: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-13 21:07:43,195: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-13 21:07:43,196: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-13 21:07:43,196: INFO: common: created directory at: artifacts]
+[2023-12-13 21:07:43,196: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-13 21:07:43,196: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1OptgbnMCCSk_-8bOTly1pMbyOS0Wg-Lp/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2023-12-13 21:09:41,498: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1OptgbnMCCSk_-8bOTly1pMbyOS0Wg-Lp/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2023-12-13 21:09:47,183: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-13 21:09:47,184: INFO: main: *******************]
+[2023-12-13 21:09:47,184: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-12-13 21:09:47,185: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-13 21:09:47,186: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-13 21:09:47,186: INFO: common: created directory at: artifacts]
+[2023-12-13 21:09:47,186: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-13 21:09:47,470: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-13 21:09:47,565: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2023-12-13 21:09:47,566: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2023-12-13 21:09:47,614: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-12-13 21:09:47,614: INFO: main: *******************]
+[2023-12-13 21:09:47,614: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-12-13 21:09:47,615: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-13 21:09:47,615: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-13 21:09:47,615: INFO: common: created directory at: artifacts]
+[2023-12-13 21:09:47,616: INFO: common: created directory at: artifacts/training]
+[2023-12-13 21:42:42,381: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-12-13 21:42:42,384: INFO: main: *******************]
+[2023-12-13 21:42:42,384: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-12-13 21:42:42,388: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-13 21:42:42,389: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-13 21:42:42,389: INFO: common: created directory at: artifacts]
+[2023-12-13 21:47:55,974: INFO: common: json file saved at: scores.json]
+[2023-12-13 21:47:55,974: INFO: common: json file saved at: scores.json]
+[2023-12-13 21:47:58,553: INFO: builder_impl: Assets written to: /var/folders/8j/v8hmyhwj0mnf687qbbc3hy_w0000gn/T/tmpin13df9f/model/data/model/assets]
+[2023-12-13 21:47:58,999: ERROR: main: module 'tensorflow.keras' has no attribute '__version__']
+Traceback (most recent call last):
+  File "main.py", line 48, in <module>
+    model_evalution.main()
+  File "/Users/saiganadharkumarpottendla/Downloads/kidney-disease-classification-deep-learning-project/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "/Users/saiganadharkumarpottendla/Downloads/kidney-disease-classification-deep-learning-project/cnnClassifier/components/model_evaluation_mlflow.py", line 72, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
+  File "/Users/saiganadharkumarpottendla/miniforge3/envs/cnncls/lib/python3.8/site-packages/mlflow/tensorflow/__init__.py", line 222, in log_model
+    return Model.log(
+  File "/Users/saiganadharkumarpottendla/miniforge3/envs/cnncls/lib/python3.8/site-packages/mlflow/models/model.py", line 551, in log
+    flavor.save_model(path=local_path, mlflow_model=mlflow_model, **kwargs)
+  File "/Users/saiganadharkumarpottendla/miniforge3/envs/cnncls/lib/python3.8/site-packages/mlflow/tensorflow/__init__.py", line 445, in save_model
+    "keras_version": keras_module.__version__,
+AttributeError: module 'tensorflow.keras' has no attribute '__version__'
