@@ -164,3 +164,44 @@ Traceback (most recent call last):
   File "/Users/saiganadharkumarpottendla/miniforge3/envs/cnncls/lib/python3.8/site-packages/mlflow/tensorflow/__init__.py", line 445, in save_model
     "keras_version": keras_module.__version__,
 AttributeError: module 'tensorflow.keras' has no attribute '__version__'
+[2023-12-13 23:00:46,512: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-13 23:00:46,514: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-13 23:00:46,514: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-13 23:00:46,515: INFO: common: created directory at: artifacts]
+[2023-12-13 23:00:46,515: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-12-13 23:00:46,515: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1OptgbnMCCSk_-8bOTly1pMbyOS0Wg-Lp/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2023-12-13 23:02:56,739: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1OptgbnMCCSk_-8bOTly1pMbyOS0Wg-Lp/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2023-12-13 23:03:02,529: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-13 23:03:02,529: INFO: main: *******************]
+[2023-12-13 23:03:02,529: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-12-13 23:03:02,530: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-13 23:03:02,531: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-13 23:03:02,531: INFO: common: created directory at: artifacts]
+[2023-12-13 23:03:02,532: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-12-13 23:03:02,823: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-13 23:03:02,954: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2023-12-13 23:03:02,956: WARNING: __init__: There is a known slowdown when using v2.11+ Keras optimizers on M1/M2 Macs. Falling back to the legacy Keras optimizer, i.e., `tf.keras.optimizers.legacy.SGD`.]
+[2023-12-13 23:03:03,016: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-12-13 23:03:03,016: INFO: main: *******************]
+[2023-12-13 23:03:03,016: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-12-13 23:03:03,017: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-13 23:03:03,018: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-13 23:03:03,018: INFO: common: created directory at: artifacts]
+[2023-12-13 23:03:03,018: INFO: common: created directory at: artifacts/training]
+[2023-12-13 23:19:00,252: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-12-13 23:19:00,253: INFO: main: *******************]
+[2023-12-13 23:19:00,253: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-12-13 23:19:00,256: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2023-12-13 23:19:00,258: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-12-13 23:19:00,258: INFO: common: created directory at: artifacts]
+[2023-12-13 23:24:24,439: INFO: common: json file saved at: scores.json]
+[2023-12-13 23:24:24,440: INFO: common: json file saved at: scores.json]
+[2023-12-13 23:24:24,440: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
